@@ -1,0 +1,58 @@
+.header {
+    padding: $spc-12 $spc-12;
+    justify-content: space-between;
+    @include d-flex(row, center, center, nowrap);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $bg-primary;
+    box-shadow: 0 $spc-10 $spc-11 0 $bg-accent;
+
+    @media (min-width: $mq-md) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+
+    &__container {
+        @include d-flex(row-reverse, space-between, center, );
+        width: 100%;
+        max-width: $w-md;
+
+        @media (min-width: $mq-md) {
+            flex-direction: row;
+        }
+
+        &__contact {
+            display: none;
+            gap: $spc-10;
+            @media (min-width: $mq-md) {
+                @include d-flex(row, center, center )
+            }
+        }
+
+        &__navbar {
+            display: none;
+            gap: $spc-12;
+
+            @media (min-width: $mq-md) {
+                display: flex;
+            }
+        }
+
+        &__logo {
+            @media (min-width: $mq-md) {
+                display: none;
+            }
+        }
+
+        &__burger {
+
+            @media (min-width: $mq-md) {
+                display: none;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.harchi {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .harchi {
+        display: flex;
+    }
+
+    .alaki {
+        margin: .5rem;
+    }
+}

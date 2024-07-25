@@ -1,0 +1,19 @@
+
+@mixin flex-items-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin perfect-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin d-flex( $dir: row , $justify: center , $items: center, $wrap: nowrap) {
+    display: flex;
+    flex-direction: $dir;
+    align-items: $items;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
